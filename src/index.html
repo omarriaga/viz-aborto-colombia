@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<div class="ui main container">
+  <div id="introduction">
+    <h1 class="ui header">Abortos en colombia</h1>
+    <p>
+      En Colombia la Corte Constitucional reconoce que la interrupción voluntaria del embarazo es un derecho íntimamente ligado al derecho a la vida, a la salud, a la integridad, a la autodeterminación, intimidad y dignidad de las mujeres.
+      La interrupción voluntaria del embarazo por las tres causales descritas en la sentencia C-355 de 2006, es un derecho fundamental de las mujeres que debe ser garantizado por el Sistema de Seguridad Social en Salud.
+      Ésta, además, pertenece a la esfera íntima o privada lo cual obliga a proteger la confidencialidad de las mujeres que la soliciten y a no ser sometida a una revictimización, discriminación, culpa o estigma.
+    </p>
+  </div>
+  <div class="ui divider"></div>
+  <div id="client">
+    <h2 class="ui header">Datos del Cliente:</h2>
+    <p>Datasketch es una plataforma digital de periodismo de investigación y de datos. El portal permite que periodistas, científicos de datos, científicos sociales y la ciudadanía en general pueda aprender y consultar sobre visualizaciones de datos, herramientas, software e investigaciones profundas sobre diversos temas coyunturales.</p>
+  </div>
+  <div class="ui piled segment">
+    <h3 class="ui header">Número de Abortos por año y Departamento </h3>
+    <div class="dropdown" id="year"><label>Año: </label><select></select></div>
+    <div id="chart-1" style="min-height: 400px;"></div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui piled segment">
+    <h3 class="ui header">Número de Abortos por año y Departamento </h3>
+    <div class="dropdown" id="college"><label>Departamento: </label><select></select></div>
+    <div id="chart-2" style="min-height: 400px;"></div>
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  d3.csv("data.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#B40486");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menuYear = d3.select("#year select")
+      .on("change", () => change(false));
+    menuYear.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menuYear.property("value", "2009");
+    var change = function (isResize) {
+      var year = menuYear.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === year }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-1");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  d3.csv("data_2.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#AEB404");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menuYear = d3.select("#college select")
+      .on("change", () => change(false));
+    menuYear.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menuYear.property("value", "Amazonas");
+    var change = function (isResize) {
+      var college = menuYear.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === college }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-2");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  var chart = function (color) {
+    var svg = null;
+    var width;
+    var height;
+    var chartWidth;
+    var chartHeight;
+    var x;
+    var y;
+    function chart(selection, isResize) {
+      selection.each(function (data) {
+        var duration = isResize ? 0 : 1000;
+        width = selection.node().getBoundingClientRect().width;
+        height = selection.node().getBoundingClientRect().height;
+        console.log("height", height);
+        var ratio = (width - 200) / (800 - 200);
+        var clampedRatio = Math.max(0, Math.min(1, ratio));
+        var marginBottom = 80 + 48 * clampedRatio;
+        var marginLeft = 48 + 24 * clampedRatio;
+        var margin = {
+          top: 22,
+          right: 10,
+          bottom: marginBottom,
+          left: marginLeft
+        };
+        chartWidth = width - margin.left - margin.right;
+        chartHeight = height - margin.top - margin.bottom;
+        if (!svg) {
+          svg = selection.append("svg")
+            .style("vertical-align", "bottom")
+            .style("height", "100%"); // <-- Makes all the difference
+          var g = svg.append("g");
+          g.append("g")
+            .attr("class", "axis axis--x");
+          g.append("g")
+            .attr("class", "axis axis--y");
+          svg.append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("dy", "0.71em")
+            .attr("text-anchor", "middle")
+            .text("Total Abortos ");
+        }
+        svg.attr("height", height)
+          .attr("width", width);
+        svg.select("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        svg.select(".title")
+          .attr("x", width - margin.right);
+        svg.select(".label")
+          .attr("x", -chartHeight / 2)
+          .attr("y", 8);
+        d3.select("#year")
+          .style("right", margin.right + "px")
+          .style("top", (12 + 13.4) + "px");
+        d3.select("#quantity")
+          .style("right", margin.right + "px")
+          .style("top", (margin.top + 50) + "px");
+        x = d3.scaleBand().range([0, chartWidth]).padding(0.1);
+        y = d3.scaleLinear().rangeRound([chartHeight, 0]);
+        x.domain(data.map(function (d) { return d.key; }));
+        y.domain([0, d3.max(data, function (d) { return d.value; })]).nice();
+        var t = d3.transition()
+          .duration(duration);
+        var xAxis = svg.select(".axis--x")
+          .attr("transform", "translate(0," + chartHeight + ")");
+        xAxis.transition()
+          .duration(duration)
+          .call(d3.axisBottom(x))
+          .selectAll("text")
+          .attr("y", 0);
+        xAxis.selectAll("text")
+          .attr("y", 0)
+          .attr("x", -5)
+          .attr("dy", ".35em")
+          .attr("transform", "rotate(-90)")
+          .style("text-anchor", "end");
+        svg.select(".axis--y")
+          .transition(t)
+          .delay(duration)
+          .call(d3.axisLeft(y).tickSize(-width));
+        var bars = svg.select('g')
+          .selectAll(".bar")
+          .data(data, function (d) { return d.key; });
+        bars
+          .transition(t)
+          .attr("x", function (d) { return x(d.key); })
+          .attr("width", x.bandwidth())
+          .transition(t)
+          .attr("y", function (d) { return y(d.value); })
+          .attr("height", function (d) { return chartHeight - y(d.value); })
+          .style("fill", function (d) { return color; });
+        bars.enter()
+          .append("rect")
+          .attr("class", "bar")
+          .attr("x", function (d) { return x(d.key); })
+          .attr("y", function (d) { return y(0); })
+          .attr("width", x.bandwidth())
+          .style("fill", function (d) { return color; })
+          .transition(t)
+          .delay(duration)
+          .attr("y", function (d) { return y(d.value); })
+          .attr("height", function (d) {
+            console.log(chartHeight, y(d.value),  chartHeight - y(d.value));
+            return chartHeight - y(d.value); });
+        bars.exit()
+          .attr("opacity", 1)
+          .transition(t)
+          .attr("y", function (d) { return y(0); })
+          .attr("height", function (d) { return 0; })
+          .attr("opacity", 0)
+          .remove();
+      });
+    }
+    return chart;
+  }
+</script>
+</body>
+
+</html>

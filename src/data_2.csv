@@ -1,0 +1,298 @@
+﻿college,amount,year
+Amazonas,1,2009
+Amazonas,1,2010
+Amazonas,2,2011
+Amazonas,3,2012
+Amazonas,5,2013
+Amazonas,8,2014
+Amazonas,7,2015
+Amazonas,2,2016
+Amazonas,14,2017
+Antioquia,896,2009
+Antioquia,487,2010
+Antioquia,486,2011
+Antioquia,482,2012
+Antioquia,515,2013
+Antioquia,787,2014
+Antioquia,786,2015
+Antioquia,710,2016
+Antioquia,1103,2017
+Arauca,7,2009
+Arauca,17,2010
+Arauca,18,2011
+Arauca,12,2012
+Arauca,12,2013
+Arauca,59,2014
+Arauca,17,2015
+Arauca,9,2016
+Arauca,21,2017
+Archipielago de San Andrés,5,2009
+Archipielago de San Andrés,5,2010
+Archipielago de San Andrés,6,2011
+Archipielago de San Andrés,15,2012
+Archipielago de San Andrés,16,2013
+Archipielago de San Andrés,10,2014
+Archipielago de San Andrés,1,2015
+Archipielago de San Andrés,2,2016
+Archipielago de San Andrés,6,2017
+Atlántico,317,2009
+Atlántico,251,2010
+Atlántico,241,2011
+Atlántico,226,2012
+Atlántico,313,2013
+Atlántico,479,2014
+Atlántico,361,2015
+Atlántico,211,2016
+Atlántico,347,2017
+Bogotá D.C,1462,2009
+Bogotá D.C,1295,2010
+Bogotá D.C,1484,2011
+Bogotá D.C,1604,2012
+Bogotá D.C,1551,2013
+Bogotá D.C,1917,2014
+Bogotá D.C,2886,2015
+Bogotá D.C,3413,2016
+Bogotá D.C,2859,2017
+Bolivar,269,2009
+Bolivar,181,2010
+Bolivar,299,2011
+Bolivar,241,2012
+Bolivar,232,2013
+Bolivar,229,2014
+Bolivar,191,2015
+Bolivar,146,2016
+Bolivar,194,2017
+Boyacá,153,2009
+Boyacá,128,2010
+Boyacá,148,2011
+Boyacá,172,2012
+Boyacá,171,2013
+Boyacá,333,2014
+Boyacá,173,2015
+Boyacá,99,2016
+Boyacá,132,2017
+Caldas,101,2009
+Caldas,70,2010
+Caldas,63,2011
+Caldas,66,2012
+Caldas,85,2013
+Caldas,88,2014
+Caldas,69,2015
+Caldas,107,2016
+Caldas,120,2017
+Caquetá,34,2009
+Caquetá,32,2010
+Caquetá,27,2011
+Caquetá,27,2012
+Caquetá,34,2013
+Caquetá,43,2014
+Caquetá,29,2015
+Caquetá,32,2016
+Caquetá,25,2017
+Casanare,10,2009
+Casanare,9,2010
+Casanare,23,2011
+Casanare,14,2012
+Casanare,17,2013
+Casanare,35,2014
+Casanare,29,2015
+Casanare,21,2016
+Casanare,28,2017
+Cauca,47,2009
+Cauca,92,2010
+Cauca,219,2011
+Cauca,228,2012
+Cauca,239,2013
+Cauca,270,2014
+Cauca,328,2015
+Cauca,211,2016
+Cauca,360,2017
+Cesar,187,2009
+Cesar,106,2010
+Cesar,158,2011
+Cesar,125,2012
+Cesar,144,2013
+Cesar,113,2014
+Cesar,131,2015
+Cesar,149,2016
+Cesar,138,2017
+Chocó,12,2009
+Chocó,10,2010
+Chocó,5,2011
+Chocó,13,2012
+Chocó,21,2013
+Chocó,38,2014
+Chocó,51,2015
+Chocó,50,2016
+Chocó,63,2017
+Cordoba,116,2009
+Cordoba,161,2010
+Cordoba,214,2011
+Cordoba,96,2012
+Cordoba,103,2013
+Cordoba,221,2014
+Cordoba,233,2015
+Cordoba,130,2016
+Cordoba,254,2017
+Cundinamarca,237,2009
+Cundinamarca,231,2010
+Cundinamarca,212,2011
+Cundinamarca,271,2012
+Cundinamarca,336,2013
+Cundinamarca,374,2014
+Cundinamarca,524,2015
+Cundinamarca,536,2016
+Cundinamarca,761,2017
+Guainía,0,2009
+Guainía,0,2010
+Guainía,1,2011
+Guainía,1,2012
+Guainía,1,2013
+Guainía,0,2014
+Guainía,3,2015
+Guainía,0,2016
+Guainía,1,2017
+Guaviare,8,2009
+Guaviare,6,2010
+Guaviare,3,2011
+Guaviare,5,2012
+Guaviare,12,2013
+Guaviare,8,2014
+Guaviare,5,2015
+Guaviare,0,2016
+Guaviare,9,2017
+Huila,59,2009
+Huila,57,2010
+Huila,72,2011
+Huila,72,2012
+Huila,123,2013
+Huila,202,2014
+Huila,156,2015
+Huila,111,2016
+Huila,176,2017
+La Guajira,49,2009
+La Guajira,76,2010
+La Guajira,89,2011
+La Guajira,182,2012
+La Guajira,491,2013
+La Guajira,342,2014
+La Guajira,435,2015
+La Guajira,134,2016
+La Guajira,134,2017
+Magdalena,170,2009
+Magdalena,114,2010
+Magdalena,91,2011
+Magdalena,197,2012
+Magdalena,138,2013
+Magdalena,211,2014
+Magdalena,202,2015
+Magdalena,74,2016
+Magdalena,227,2017
+Meta,141,2009
+Meta,81,2010
+Meta,107,2011
+Meta,93,2012
+Meta,95,2013
+Meta,239,2014
+Meta,161,2015
+Meta,60,2016
+Meta,78,2017
+Nariño,138,2009
+Nariño,108,2010
+Nariño,129,2011
+Nariño,157,2012
+Nariño,241,2013
+Nariño,281,2014
+Nariño,213,2015
+Nariño,234,2016
+Nariño,394,2017
+Norte de Santander,85,2009
+Norte de Santander,128,2010
+Norte de Santander,117,2011
+Norte de Santander,100,2012
+Norte de Santander,109,2013
+Norte de Santander,153,2014
+Norte de Santander,192,2015
+Norte de Santander,64,2016
+Norte de Santander,89,2017
+Putumayo,8,2009
+Putumayo,11,2010
+Putumayo,12,2011
+Putumayo,48,2012
+Putumayo,49,2013
+Putumayo,48,2014
+Putumayo,32,2015
+Putumayo,43,2016
+Putumayo,44,2017
+Quindío,127,2009
+Quindío,93,2010
+Quindío,104,2011
+Quindío,119,2012
+Quindío,100,2013
+Quindío,235,2014
+Quindío,123,2015
+Quindío,48,2016
+Quindío,65,2017
+Risaralda,124,2009
+Risaralda,98,2010
+Risaralda,169,2011
+Risaralda,113,2012
+Risaralda,212,2013
+Risaralda,213,2014
+Risaralda,147,2015
+Risaralda,94,2016
+Risaralda,89,2017
+Santander,346,2009
+Santander,191,2010
+Santander,230,2011
+Santander,249,2012
+Santander,170,2013
+Santander,355,2014
+Santander,320,2015
+Santander,171,2016
+Santander,277,2017
+Sucre,66,2009
+Sucre,43,2010
+Sucre,57,2011
+Sucre,68,2012
+Sucre,88,2013
+Sucre,110,2014
+Sucre,100,2015
+Sucre,41,2016
+Sucre,61,2017
+Tolima,376,2009
+Tolima,128,2010
+Tolima,155,2011
+Tolima,138,2012
+Tolima,137,2013
+Tolima,201,2014
+Tolima,194,2015
+Tolima,93,2016
+Tolima,168,2017
+Valle del Cauca,524,2009
+Valle del Cauca,328,2010
+Valle del Cauca,530,2011
+Valle del Cauca,847,2012
+Valle del Cauca,1023,2013
+Valle del Cauca,1024,2014
+Valle del Cauca,865,2015
+Valle del Cauca,936,2016
+Valle del Cauca,1312,2017
+Vaupés,0,2009
+Vaupés,0,2010
+Vaupés,0,2011
+Vaupés,1,2012
+Vaupés,0,2013
+Vaupés,0,2014
+Vaupés,0,2015
+Vaupés,1,2016
+Vaupés,2,2017
+Vichada,1,2009
+Vichada,0,2010
+Vichada,2,2011
+Vichada,0,2012
+Vichada,0,2013
+Vichada,4,2014
+Vichada,4,2015
+Vichada,5,2016
+Vichada,7,2017
