@@ -1,0 +1,227 @@
+[
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2009,
+    "CANTIDAD": 1339
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2010,
+    "CANTIDAD": 1244
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2011,
+    "CANTIDAD": 1560
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2012,
+    "CANTIDAD": 1445
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2013,
+    "CANTIDAD": 1558
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2014,
+    "CANTIDAD": 2587
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2015,
+    "CANTIDAD": 4087
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2016,
+    "CANTIDAD": 6435
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO COMPLETO",
+    "AÑO": 2017,
+    "CANTIDAD": 4693
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2009,
+    "CANTIDAD": 2143
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2010,
+    "CANTIDAD": 1863
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2011,
+    "CANTIDAD": 2315
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2012,
+    "CANTIDAD": 2311
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2013,
+    "CANTIDAD": 2505
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2014,
+    "CANTIDAD": 3452
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2015,
+    "CANTIDAD": 2899
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2016,
+    "CANTIDAD": 2043
+  },
+  {
+    "DIAGNÓSTICO": "ABORTO ESPONTANEO INCOMPLETO",
+    "AÑO": 2017,
+    "CANTIDAD": 2481
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2009,
+    "CANTIDAD": 2178
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2010,
+    "CANTIDAD": 1163
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2011,
+    "CANTIDAD": 1123
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2012,
+    "CANTIDAD": 1282
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2013,
+    "CANTIDAD": 1343
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2014,
+    "CANTIDAD": 1561
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2015,
+    "CANTIDAD": 1430
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2016,
+    "CANTIDAD": 526
+  },
+  {
+    "DIAGNÓSTICO": "EXTRACCIÓN MENSTRUAL",
+    "AÑO": 2017,
+    "CANTIDAD": 929
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2009,
+    "CANTIDAD": 66
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2010,
+    "CANTIDAD": 65
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2011,
+    "CANTIDAD": 77
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2012,
+    "CANTIDAD": 72
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2013,
+    "CANTIDAD": 67
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2014,
+    "CANTIDAD": 81
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2015,
+    "CANTIDAD": 102
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2016,
+    "CANTIDAD": 87
+  },
+  {
+    "DIAGNÓSTICO": "FALLA EN INDUCCIÓN",
+    "AÑO": 2017,
+    "CANTIDAD": 65
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2009,
+    "CANTIDAD": 564
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2010,
+    "CANTIDAD": 326
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2011,
+    "CANTIDAD": 531
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2012,
+    "CANTIDAD": 1104
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2013,
+    "CANTIDAD": 1599
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2014,
+    "CANTIDAD": 1675
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2015,
+    "CANTIDAD": 1490
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2016,
+    "CANTIDAD": 958
+  },
+  {
+    "DIAGNÓSTICO": "EMBARAZO NO DESEADO",
+    "AÑO": 2017,
+    "CANTIDAD": 1693
+  }
+]

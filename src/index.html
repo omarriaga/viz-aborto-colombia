@@ -16,41 +16,66 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<div class="ui main container" id="contenido">
-  <div id="client">
-    <h2 class="ui header">Datos del Cliente:</h2>
-    <p>Datasketch es una plataforma digital de periodismo de investigación y de datos. El portal permite que periodistas, científicos de datos, científicos sociales y la ciudadanía en general pueda aprender y consultar sobre visualizaciones de datos, herramientas, software e investigaciones profundas sobre diversos temas coyunturales.</p>
-  </div>
-  <div class="ui divider"></div>
+<div class="ui main fluid container" id="contenido">
   <div id="introduction">
-    <h1 class="ui huge header">Abortos en colombia</h1>
+    <h1 class="ui center aligned huge header">Abortos en colombia</h1>
+    <h4 class="ui center aligned header">Cifras de aborto legal en Colombia (2009 - 2017)</h4>
     <p>
-      En Colombia la Corte Constitucional reconoce que la interrupción voluntaria del embarazo es un derecho íntimamente ligado al derecho a la vida, a la salud, a la integridad, a la autodeterminación, intimidad y dignidad de las mujeres.
-      La interrupción voluntaria del embarazo por las tres causales descritas en la sentencia C-355 de 2006, es un derecho fundamental de las mujeres que debe ser garantizado por el Sistema de Seguridad Social en Salud.
-      Ésta, además, pertenece a la esfera íntima o privada lo cual obliga a proteger la confidencialidad de las mujeres que la soliciten y a no ser sometida a una revictimización, discriminación, culpa o estigma.
+      Desde 2006, el Tribunal Constitucional de Colombia dio paso a la IVE (Interrupción Voluntaria del Embarazo), permitiendo que este procedimiento se pueda llevar a cabo en tres circunstancias; cuando el embarazo pone en peligro la salud o la vida de la madre, cuando el embarazo es el resultado de una violación o incesto, y cuando hay malformaciones del feto que son incompatibles con la vida fuera del útero.
+      Esta interrupción es un derecho fundamental que consiste en un procedimiento para terminar conscientemente un embarazo en curso; en muchos países este procedimiento es ilegal, por lo que las mujeres recurren a hacerlo ilegalmente en lugares que no cumplen con las condiciones óptimas de salud, poniendo su salud y su vida en peligro. Así que las mujeres recurren a hacerlo ilegalmente en lugares que no cumplen con las condiciones óptimas de salud, poniendo su salud y su vida en peligro.
     </p>
   </div>
 
-  <div class="ui piled segment">
+  <div class="ui center aligned piled segment">
     <h3 class="ui header">Número de Abortos por año y Departamento </h3>
     <div class="dropdown" id="year"><label>Año: </label><select></select></div>
     <div id="chart-1" style="min-height: 400px;"></div>
   </div>
   <div class="ui divider"></div>
-  <div class="ui piled segment">
+  <div class="paragrah">
+    <p>En la siguiente visualización se evidencia que el aborto médico natural (espontáneo) ha sido la tipificación más diagnosticada por los centros de salud autorizados para realizar la interrupción del embarazo de forma legal, en cuanto a los abortos inducidos, se puede observar que extracción menstrual ha sido el medio más utilizado para realizar la interrupción del embarazo.</p>
+  </div>
+  <div class="ui center aligned piled segment">
     <h3 class="ui header">Número de Abortos por año y Departamento </h3>
-    <div class="dropdown" id="college"><label>Departamento: </label><select></select></div>
     <div id="chart-2" style="min-height: 400px;"></div>
   </div>
+  <div class="ui center aligned piled segment">
+    <h3 class="ui header"> </h3>
+    <div id="chart-3" class="ui center aligned" style="min-height: 400px;"></div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui grid">
+    <div class="ui six wide column">
+  <div class="paragrah">
+    <p>Según los datos obtenidos del Ministerio de Salud, en la siguiente visualización se puede evidenciar que las mujeres que más acudieron a este tipo de procedimientos en los centros de salud están en el rango de edad de 21 a 30 años, y el año en el cual más se realizaron fue en el año 2014 con un total de 9.537 abortos.</p>
+    <p>Con esta visualización también se puede evidenciar que las mujeres entre 10 y 20 años presentan una cantidad significativa de abortos realizados para cada uno de los años, siendo en 2014 el pico más alto. Estas cifras son preocupantes y están directamente relacionadas con los embarazos registrados a temprana edad en Colombia, a raíz de estas cifras se han lanzado diferentes campañas con el fin de prevenir estas situaciones, ejemplo de ello es la campaña #YoCuidoMiFuturo realizada por el ICBF y Profamilia lanzada desde el 2015, este tipo de campañas parecen tener efecto en los jóvenes ya que en los últimos años se ha visto una disminución en la cantidad de abortos realizados.</p>
+    <p>En los mismos rangos de edad, a través de la siguiente visualización se puede ver que el aborto espontaneo completo e incompleto en la mayoría de los rangos es el más predominante, sin embargo, solo en el rango de edad de 41 a 50 años se presentaron más casos de aborto por extracción menstrual.</p>
+  </div>
+    </div>
+    <div class="ui six wide column">
+      <div class="ui center aligned piled segment">
+        <div id="chart-4" class="ui center aligned" style="min-height: 400px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="ui divider"></div>
+
+
+  <br />
+  <br />
+  <br />
 </div>
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@4.2.0/build/vega.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6/build/vega-lite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@3.19.2/build/vega-embed.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
   d3.csv("data.csv", function (d) {
     d.amount = +d.amount;
@@ -76,37 +101,6 @@
         .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
         .sort(function (a, b) { return b.value - a.value; });
       var selection = d3.select("#chart-1");
-      selection.datum(currentData).call(barChart, isResize);
-    }
-    window.onresize = function () {
-      change(true);
-    }
-    change(false);
-  });
-  d3.csv("data_2.csv", function (d) {
-    d.amount = +d.amount;
-    return d;
-  }, function (error, data) {
-    if (error) throw error;
-    var barChart = chart("#AEB404");
-    var nestedData = d3.nest()
-      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
-      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
-      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
-      .entries(data);
-    var menuYear = d3.select("#college select")
-      .on("change", () => change(false));
-    menuYear.selectAll("option")
-      .data(nestedData)
-      .enter().append("option")
-      .text(function (d) { return d.key; });
-    menuYear.property("value", "Amazonas");
-    var change = function (isResize) {
-      var college = menuYear.property("value");
-      var currentData = nestedData.find(function (d) { return d.key === college }).values
-        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
-        .sort(function (a, b) { return b.value - a.value; });
-      var selection = d3.select("#chart-2");
       selection.datum(currentData).call(barChart, isResize);
     }
     window.onresize = function () {
@@ -229,6 +223,169 @@
     }
     return chart;
   }
+  const dataviz8 = d3.select("#chart-2");
+  const width = dataviz8.node().getBoundingClientRect().width;
+  console.log('width', width);
+  var vlSpec =
+    {
+      '$schema': 'https://vega.github.io/schema/vega-lite/v3.json',
+      'data': { 'url': 'dataViz8.json'},
+      "autosize": {
+        "type": "fit",
+      },
+      'mark': 'bar',
+      'encoding': {
+        'column': {
+          'field': 'AÑO', 'type': 'ordinal'
+        },
+        'y': {
+          'aggregate': 'sum', 'field': 'CANTIDAD', 'type': 'quantitative',
+          'axis': {'title': 'CANTIDAD ABORTOS', 'grid': false}
+        },
+        'x': {
+          'field': 'DIAGNÓSTICO', 'type': 'nominal',
+          'scale': {'rangeStep': 30},
+          'axis': {'title': ''}
+        },
+        'color': {
+          'field': 'DIAGNÓSTICO', 'type': 'nominal',
+          'scale': {'range': ['#6B6CCA', '#F48FFF', '#5CC1CA', '#CAC86D', '#41FF17']}
+        }
+      },
+      'config': {
+        'view': {'stroke': 'transparent'},
+        'axis': {'domainWidth': 5}
+      }
+    };
+  // Embed the visualization in the container with id `vis`
+  vegaEmbed('#chart-2', vlSpec,{theme: 'light', actions:false});
+  // Assign the specification to a local variable vlSpec.
+  var vlSpec3 =
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+      "data": {"url": "dataviz3.json"},
+      "mark": "bar",
+      "width": 500,
+      "height": 380,
+      "encoding": {
+        "x": {
+          // "timeUnit": "month",
+          "field": "year",
+          "type": "ordinal",
+          "axis": {"title": "AÑO"}
+        },
+        "y": {
+          "field":"amount",
+          "aggregate": "sum",
+          "type": "quantitative",
+          "axis": {"title": "CANTIDAD"}
+        },
+        "color": {
+          "field": "TIPO ABORTO",
+          "type": "nominal",
+          "scale":{"scheme":"tableau10"
+          },
+          "legend": {"title": "TIPO DE ABORTO"}
+        }
+      }
+    }
+  // Embed the visualization in the container with id `vis`
+  vegaEmbed("#chart-3", vlSpec3,{theme: 'light', actions:false});
+
+  var vlSpec4 =
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc6.json",
+      "data": {"url": "data4.csv"},
+      //"mark": "trail"
+      "width": 750,
+      "height": 750,
+      "layer": [
+        {
+          "encoding": {
+            "x": {"field": "FECHA", "type": "nominal","axis":{"title":"TOTAL AÑO"},},
+            "y": {"field": "NUMERO DE ABORTOS", "type": "quantitative","axis":{"title":"NUMERO DE ABORTOS"}},
+            "color": {"field": "RANGO DE EDAD", "type": "nominal"}
+          },
+          "layer": [{
+            "mark": "trail"
+          },{
+            "selection": {
+              "tooltip": {
+                "type": "single",
+                "nearest": true,
+                "on": "mouseover",
+                "encodings": [
+                  "x"
+                ],
+                "empty": "none"
+              }
+            },
+            "mark": "circle",
+            "encoding": {
+              "opacity": {
+                "condition": {
+                  "selection": "tooltip",
+                  "value": 1
+                },
+                "value": 0
+              }
+            }
+          }]
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "selection": "tooltip",
+                "fontSize": 66
+              }
+            }
+          ],
+          "layer": [{
+            "mark": {
+              "type": "rule",
+              "color": "gray",
+              "strokeWidth":1
+            },
+            "encoding": {
+              "x": {
+                "type": "nominal",
+                "field": "FECHA"
+              }
+            }
+          }, {
+            "mark": {
+              "type": "text",
+              "align": "right",
+              "baseline":"bottom",
+              "fontWeight":"bold",
+              "fontSize": 16,
+              "font":"sans-serif",
+              "dx": 10,
+              "dy": -10
+            },
+            "encoding": {
+              "text": {
+                "type": "quantitative",
+                "field": "NUMERO DE ABORTOS"
+              },
+              "color": { "type": "nominal","field": "RANGO DE EDAD"},
+              "x": {
+
+                "type": "nominal",
+                "field": "FECHA",
+              },
+              "y": {
+                "type": "quantitative",
+                "field": "NUMERO DE ABORTOS"
+              }
+            }
+          }]
+        }
+      ]
+    }
+  // Embed the visualization in the container with id `vis`
+  vegaEmbed("#chart-4", vlSpec4,{theme: 'light', actions:false});
 </script>
 </body>
 
