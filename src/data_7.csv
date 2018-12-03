@@ -1,0 +1,271 @@
+﻿amount,college,year,depto
+446,Completo,2009,Region Andina
+410,Completo,2010,Region Andina
+513,Completo,2011,Region Andina
+506,Completo,2012,Region Andina
+529,Completo,2013,Region Andina
+897,Completo,2014,Region Andina
+935,Completo,2015,Region Andina
+922,Completo,2016,Region Andina
+1347,Completo,2017,Region Andina
+170,Completo,2009,Region Caribe
+193,Completo,2010,Region Caribe
+274,Completo,2011,Region Caribe
+150,Completo,2012,Region Caribe
+184,Completo,2013,Region Caribe
+302,Completo,2014,Region Caribe
+381,Completo,2015,Region Caribe
+192,Completo,2016,Region Caribe
+321,Completo,2017,Region Caribe
+161,Completo,2009,Region Pacífica
+120,Completo,2010,Region Pacífica
+192,Completo,2011,Region Pacífica
+205,Completo,2012,Region Pacífica
+250,Completo,2013,Region Pacífica
+296,Completo,2014,Region Pacífica
+380,Completo,2015,Region Pacífica
+587,Completo,2016,Region Pacífica
+1019,Completo,2017,Region Pacífica
+56,Completo,2009,Region Orinoquía
+31,Completo,2010,Region Orinoquía
+39,Completo,2011,Region Orinoquía
+22,Completo,2012,Region Orinoquía
+34,Completo,2013,Region Orinoquía
+99,Completo,2014,Region Orinoquía
+67,Completo,2015,Region Orinoquía
+36,Completo,2016,Region Orinoquía
+57,Completo,2017,Region Orinoquía
+7,Completo,2009,Region Amazonía
+7,Completo,2010,Region Amazonía
+7,Completo,2011,Region Amazonía
+8,Completo,2012,Region Amazonía
+17,Completo,2013,Region Amazonía
+16,Completo,2014,Region Amazonía
+27,Completo,2015,Region Amazonía
+29,Completo,2016,Region Amazonía
+36,Completo,2017,Region Amazonía
+1,Completo,2009,Region Insular
+1,Completo,2010,Region Insular
+0,Completo,2011,Region Insular
+6,Completo,2012,Region Insular
+7,Completo,2013,Region Insular
+3,Completo,2014,Region Insular
+0,Completo,2015,Region Insular
+1,Completo,2016,Region Insular
+3,Completo,2017,Region Insular
+718,Incompleto,2009,Region Andina
+664,Incompleto,2010,Region Andina
+692,Incompleto,2011,Region Andina
+634,Incompleto,2012,Region Andina
+649,Incompleto,2013,Region Andina
+1015,Incompleto,2014,Region Andina
+861,Incompleto,2015,Region Andina
+635,Incompleto,2016,Region Andina
+814,Incompleto,2017,Region Andina
+703,Incompleto,2009,Region Caribe
+528,Incompleto,2010,Region Caribe
+710,Incompleto,2011,Region Caribe
+685,Incompleto,2012,Region Caribe
+858,Incompleto,2013,Region Caribe
+1121,Incompleto,2014,Region Caribe
+884,Incompleto,2015,Region Caribe
+589,Incompleto,2016,Region Caribe
+716,Incompleto,2017,Region Caribe
+229,Incompleto,2009,Region Pacífica
+210,Incompleto,2010,Region Pacífica
+300,Incompleto,2011,Region Pacífica
+361,Incompleto,2012,Region Pacífica
+355,Incompleto,2013,Region Pacífica
+408,Incompleto,2014,Region Pacífica
+509,Incompleto,2015,Region Pacífica
+421,Incompleto,2016,Region Pacífica
+462,Incompleto,2017,Region Pacífica
+52,Incompleto,2009,Region Orinoquía
+60,Incompleto,2010,Region Orinoquía
+79,Incompleto,2011,Region Orinoquía
+61,Incompleto,2012,Region Orinoquía
+58,Incompleto,2013,Region Orinoquía
+154,Incompleto,2014,Region Orinoquía
+98,Incompleto,2015,Region Orinoquía
+44,Incompleto,2016,Region Orinoquía
+47,Incompleto,2017,Region Orinoquía
+36,Incompleto,2009,Region Amazonía
+31,Incompleto,2010,Region Amazonía
+28,Incompleto,2011,Region Amazonía
+39,Incompleto,2012,Region Amazonía
+61,Incompleto,2013,Region Amazonía
+34,Incompleto,2014,Region Amazonía
+22,Incompleto,2015,Region Amazonía
+36,Incompleto,2016,Region Amazonía
+38,Incompleto,2017,Region Amazonía
+4,Incompleto,2009,Region Insular
+4,Incompleto,2010,Region Insular
+6,Incompleto,2011,Region Insular
+7,Incompleto,2012,Region Insular
+8,Incompleto,2013,Region Insular
+6,Incompleto,2014,Region Insular
+1,Incompleto,2015,Region Insular
+1,Incompleto,2016,Region Insular
+3,Incompleto,2017,Region Insular
+1015,Extracción Menstrual,2009,Region Andina
+382,Extracción Menstrual,2010,Region Andina
+352,Extracción Menstrual,2011,Region Andina
+448,Extracción Menstrual,2012,Region Andina
+455,Extracción Menstrual,2013,Region Andina
+626,Extracción Menstrual,2014,Region Andina
+365,Extracción Menstrual,2015,Region Andina
+225,Extracción Menstrual,2016,Region Andina
+404,Extracción Menstrual,2017,Region Andina
+214,Extracción Menstrual,2009,Region Caribe
+148,Extracción Menstrual,2010,Region Caribe
+100,Extracción Menstrual,2011,Region Caribe
+191,Extracción Menstrual,2012,Region Caribe
+327,Extracción Menstrual,2013,Region Caribe
+152,Extracción Menstrual,2014,Region Caribe
+293,Extracción Menstrual,2015,Region Caribe
+25,Extracción Menstrual,2016,Region Caribe
+156,Extracción Menstrual,2017,Region Caribe
+198,Extracción Menstrual,2009,Region Pacífica
+123,Extracción Menstrual,2010,Region Pacífica
+137,Extracción Menstrual,2011,Region Pacífica
+159,Extracción Menstrual,2012,Region Pacífica
+177,Extracción Menstrual,2013,Region Pacífica
+175,Extracción Menstrual,2014,Region Pacífica
+68,Extracción Menstrual,2015,Region Pacífica
+42,Extracción Menstrual,2016,Region Pacífica
+53,Extracción Menstrual,2017,Region Pacífica
+48,Extracción Menstrual,2009,Region Orinoquía
+4,Extracción Menstrual,2010,Region Orinoquía
+15,Extracción Menstrual,2011,Region Orinoquía
+10,Extracción Menstrual,2012,Region Orinoquía
+18,Extracción Menstrual,2013,Region Orinoquía
+45,Extracción Menstrual,2014,Region Orinoquía
+22,Extracción Menstrual,2015,Region Orinoquía
+12,Extracción Menstrual,2016,Region Orinoquía
+12,Extracción Menstrual,2017,Region Orinoquía
+1,Extracción Menstrual,2009,Region Amazonía
+10,Extracción Menstrual,2010,Region Amazonía
+4,Extracción Menstrual,2011,Region Amazonía
+6,Extracción Menstrual,2012,Region Amazonía
+7,Extracción Menstrual,2013,Region Amazonía
+11,Extracción Menstrual,2014,Region Amazonía
+10,Extracción Menstrual,2015,Region Amazonía
+1,Extracción Menstrual,2016,Region Amazonía
+5,Extracción Menstrual,2017,Region Amazonía
+0,Extracción Menstrual,2009,Region Insular
+0,Extracción Menstrual,2010,Region Insular
+0,Extracción Menstrual,2011,Region Insular
+0,Extracción Menstrual,2012,Region Insular
+0,Extracción Menstrual,2013,Region Insular
+0,Extracción Menstrual,2014,Region Insular
+0,Extracción Menstrual,2015,Region Insular
+0,Extracción Menstrual,2016,Region Insular
+0,Extracción Menstrual,2017,Region Insular
+18,Falla Inducción Médica,2009,Region Andina
+28,Falla Inducción Médica,2010,Region Andina
+30,Falla Inducción Médica,2011,Region Andina
+25,Falla Inducción Médica,2012,Region Andina
+19,Falla Inducción Médica,2013,Region Andina
+34,Falla Inducción Médica,2014,Region Andina
+29,Falla Inducción Médica,2015,Region Andina
+12,Falla Inducción Médica,2016,Region Andina
+18,Falla Inducción Médica,2017,Region Andina
+11,Falla Inducción Médica,2009,Region Caribe
+18,Falla Inducción Médica,2010,Region Caribe
+12,Falla Inducción Médica,2011,Region Caribe
+13,Falla Inducción Médica,2012,Region Caribe
+21,Falla Inducción Médica,2013,Region Caribe
+19,Falla Inducción Médica,2014,Region Caribe
+18,Falla Inducción Médica,2015,Region Caribe
+14,Falla Inducción Médica,2016,Region Caribe
+16,Falla Inducción Médica,2017,Region Caribe
+12,Falla Inducción Médica,2009,Region Pacífica
+4,Falla Inducción Médica,2010,Region Pacífica
+15,Falla Inducción Médica,2011,Region Pacífica
+11,Falla Inducción Médica,2012,Region Pacífica
+12,Falla Inducción Médica,2013,Region Pacífica
+8,Falla Inducción Médica,2014,Region Pacífica
+14,Falla Inducción Médica,2015,Region Pacífica
+9,Falla Inducción Médica,2016,Region Pacífica
+13,Falla Inducción Médica,2017,Region Pacífica
+0,Falla Inducción Médica,2009,Region Orinoquía
+1,Falla Inducción Médica,2010,Region Orinoquía
+1,Falla Inducción Médica,2011,Region Orinoquía
+0,Falla Inducción Médica,2012,Region Orinoquía
+1,Falla Inducción Médica,2013,Region Orinoquía
+1,Falla Inducción Médica,2014,Region Orinoquía
+2,Falla Inducción Médica,2015,Region Orinoquía
+1,Falla Inducción Médica,2016,Region Orinoquía
+0,Falla Inducción Médica,2017,Region Orinoquía
+5,Falla Inducción Médica,2009,Region Amazonía
+1,Falla Inducción Médica,2010,Region Amazonía
+1,Falla Inducción Médica,2011,Region Amazonía
+4,Falla Inducción Médica,2012,Region Amazonía
+2,Falla Inducción Médica,2013,Region Amazonía
+2,Falla Inducción Médica,2014,Region Amazonía
+1,Falla Inducción Médica,2015,Region Amazonía
+6,Falla Inducción Médica,2016,Region Amazonía
+7,Falla Inducción Médica,2017,Region Amazonía
+0,Falla Inducción Médica,2009,Region Insular
+0,Falla Inducción Médica,2010,Region Insular
+0,Falla Inducción Médica,2011,Region Insular
+0,Falla Inducción Médica,2012,Region Insular
+0,Falla Inducción Médica,2013,Region Insular
+0,Falla Inducción Médica,2014,Region Insular
+0,Falla Inducción Médica,2015,Region Insular
+0,Falla Inducción Médica,2016,Region Insular
+0,Falla Inducción Médica,2017,Region Insular
+307,Embarazo No Deseado,2009,Region Andina
+127,Embarazo No Deseado,2010,Region Andina
+169,Embarazo No Deseado,2011,Region Andina
+169,Embarazo No Deseado,2012,Region Andina
+306,Embarazo No Deseado,2013,Region Andina
+369,Embarazo No Deseado,2014,Region Andina
+494,Embarazo No Deseado,2015,Region Andina
+239,Embarazo No Deseado,2016,Region Andina
+397,Embarazo No Deseado,2017,Region Andina
+76,Embarazo No Deseado,2009,Region Caribe
+45,Embarazo No Deseado,2010,Region Caribe
+53,Embarazo No Deseado,2011,Region Caribe
+96,Embarazo No Deseado,2012,Region Caribe
+119,Embarazo No Deseado,2013,Region Caribe
+111,Embarazo No Deseado,2014,Region Caribe
+77,Embarazo No Deseado,2015,Region Caribe
+65,Embarazo No Deseado,2016,Region Caribe
+146,Embarazo No Deseado,2017,Region Caribe
+121,Embarazo No Deseado,2009,Region Pacífica
+81,Embarazo No Deseado,2010,Region Pacífica
+239,Embarazo No Deseado,2011,Region Pacífica
+509,Embarazo No Deseado,2012,Region Pacífica
+730,Embarazo No Deseado,2013,Region Pacífica
+726,Embarazo No Deseado,2014,Region Pacífica
+486,Embarazo No Deseado,2015,Region Pacífica
+372,Embarazo No Deseado,2016,Region Pacífica
+582,Embarazo No Deseado,2017,Region Pacífica
+3,Embarazo No Deseado,2009,Region Orinoquía
+11,Embarazo No Deseado,2010,Region Orinoquía
+16,Embarazo No Deseado,2011,Region Orinoquía
+26,Embarazo No Deseado,2012,Region Orinoquía
+13,Embarazo No Deseado,2013,Region Orinoquía
+38,Embarazo No Deseado,2014,Region Orinoquía
+22,Embarazo No Deseado,2015,Region Orinoquía
+2,Embarazo No Deseado,2016,Region Orinoquía
+18,Embarazo No Deseado,2017,Region Orinoquía
+2,Embarazo No Deseado,2009,Region Amazonía
+1,Embarazo No Deseado,2010,Region Amazonía
+5,Embarazo No Deseado,2011,Region Amazonía
+28,Embarazo No Deseado,2012,Region Amazonía
+14,Embarazo No Deseado,2013,Region Amazonía
+44,Embarazo No Deseado,2014,Region Amazonía
+16,Embarazo No Deseado,2015,Region Amazonía
+6,Embarazo No Deseado,2016,Region Amazonía
+9,Embarazo No Deseado,2017,Region Amazonía
+0,Embarazo No Deseado,2009,Region Insular
+0,Embarazo No Deseado,2010,Region Insular
+0,Embarazo No Deseado,2011,Region Insular
+2,Embarazo No Deseado,2012,Region Insular
+1,Embarazo No Deseado,2013,Region Insular
+1,Embarazo No Deseado,2014,Region Insular
+0,Embarazo No Deseado,2015,Region Insular
+0,Embarazo No Deseado,2016,Region Insular
+0,Embarazo No Deseado,2017,Region Insular

@@ -64,8 +64,24 @@
     </div>
   </div>
   <div class="ui divider"></div>
-  <h4 class="ui center aligned header">Cifras de aborto legal en Colombia (2009 - 2017)</h4>
-
+  <div class="ui grid">
+    <div class="ui six wide column">
+      <h4 class="ui center aligned header">Tipos de aborto legales diagnosticados. </h4>
+      <div class="paragrah">
+        <p>De acuerdo con los datos suministrados por el Ministerio de Salud, en el periodo de tiempo entre 2009 y 2017, se realizaron abortos tanto espontáneos (ocurre antes de las 20 semanas de embarazo y existen diferentes tipos: completo: expulsión completa del embrión, incompleto: retención de restos), como inducidos (provocados, como extracción menstrual); además se encontraron prácticas de abortos con un diagnóstico de embarazos no deseados. Las cifras en las siguientes visualizaciones:</p>
+      </div>
+      <div class="ui center aligned piled segment">
+        <div class="dropdown" id="type"><label>Año: </label><select></select></div>
+        <div id="chart-7" class="ui center aligned" style="min-height: 400px;"></div>
+      </div>
+    </div>
+    <div class="ui ten wide column">
+      <div class="ui center aligned piled segment">
+        <div class="dropdown" id="year-2"><label>Año: </label><select></select></div>
+        <div id="chart-6" class="ui center aligned" style="min-height: 400px;"></div>
+      </div>
+    </div>
+  </div>
   <br />
   <br />
   <br />
@@ -137,6 +153,68 @@
         .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
         .sort(function (a, b) { return b.value - a.value; });
       var selection = d3.select("#chart-5");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  d3.csv("data_7.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#0B610B");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menuYear = d3.select("#year-2 select")
+      .on("change", () => change(false));
+    menuYear.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menuYear.property("value", "2009");
+    var change = function (isResize) {
+      var year = menuYear.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === year }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-6");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  d3.csv("data_8.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#088A85");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menuYear = d3.select("#type select")
+      .on("change", () => change(false));
+    menuYear.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menuYear.property("value", "COMPLETO");
+    var change = function (isResize) {
+      var college = menuYear.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === college }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-7");
       selection.datum(currentData).call(barChart, isResize);
     }
     window.onresize = function () {
@@ -268,6 +346,7 @@
       'data': { 'url': 'dataViz8.json'},
       "autosize": {
         "type": "fit",
+        "resize": true
       },
       'mark': 'bar',
       'encoding': {
