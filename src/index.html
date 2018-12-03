@@ -45,21 +45,26 @@
   </div>
   <div class="ui divider"></div>
   <div class="ui grid">
-    <div class="ui six wide column">
-  <div class="paragrah">
-    <p>Según los datos obtenidos del Ministerio de Salud, en la siguiente visualización se puede evidenciar que las mujeres que más acudieron a este tipo de procedimientos en los centros de salud están en el rango de edad de 21 a 30 años, y el año en el cual más se realizaron fue en el año 2014 con un total de 9.537 abortos.</p>
-    <p>Con esta visualización también se puede evidenciar que las mujeres entre 10 y 20 años presentan una cantidad significativa de abortos realizados para cada uno de los años, siendo en 2014 el pico más alto. Estas cifras son preocupantes y están directamente relacionadas con los embarazos registrados a temprana edad en Colombia, a raíz de estas cifras se han lanzado diferentes campañas con el fin de prevenir estas situaciones, ejemplo de ello es la campaña #YoCuidoMiFuturo realizada por el ICBF y Profamilia lanzada desde el 2015, este tipo de campañas parecen tener efecto en los jóvenes ya que en los últimos años se ha visto una disminución en la cantidad de abortos realizados.</p>
-    <p>En los mismos rangos de edad, a través de la siguiente visualización se puede ver que el aborto espontaneo completo e incompleto en la mayoría de los rangos es el más predominante, sin embargo, solo en el rango de edad de 41 a 50 años se presentaron más casos de aborto por extracción menstrual.</p>
-  </div>
-    </div>
-    <div class="ui six wide column">
+    <div class="ui ten wide column">
       <div class="ui center aligned piled segment">
         <div id="chart-4" class="ui center aligned" style="min-height: 400px;"></div>
       </div>
     </div>
+    <div class="ui six wide column">
+      <div class="paragrah">
+        <p>Según los datos obtenidos del Ministerio de Salud, en la siguiente visualización se puede evidenciar que las mujeres que más acudieron a este tipo de procedimientos en los centros de salud están en el rango de edad de 21 a 30 años, y el año en el cual más se realizaron fue en el año 2014 con un total de 9.537 abortos.</p>
+        <p>Con esta visualización también se puede evidenciar que las mujeres entre 10 y 20 años presentan una cantidad significativa de abortos realizados para cada uno de los años, siendo en 2014 el pico más alto. Estas cifras son preocupantes y están directamente relacionadas con los embarazos registrados a temprana edad en Colombia, a raíz de estas cifras se han lanzado diferentes campañas con el fin de prevenir estas situaciones, ejemplo de ello es la campaña #YoCuidoMiFuturo realizada por el ICBF y Profamilia lanzada desde el 2015, este tipo de campañas parecen tener efecto en los jóvenes ya que en los últimos años se ha visto una disminución en la cantidad de abortos realizados.</p>
+        <p>En los mismos rangos de edad, a través de la siguiente visualización se puede ver que el aborto espontaneo completo e incompleto en la mayoría de los rangos es el más predominante, sin embargo, solo en el rango de edad de 41 a 50 años se presentaron más casos de aborto por extracción menstrual.</p>
+        <div class="ui center aligned piled segment">
+          <h3 class="ui header">Tipo de Aborto por edad</h3>
+          <div class="dropdown" id="rango"><label>Año: </label><select></select></div>
+          <div id="chart-5" style="min-height: 400px;"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="ui divider"></div>
-
+  <h4 class="ui center aligned header">Cifras de aborto legal en Colombia (2009 - 2017)</h4>
 
   <br />
   <br />
@@ -101,6 +106,37 @@
         .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
         .sort(function (a, b) { return b.value - a.value; });
       var selection = d3.select("#chart-1");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  d3.csv("data_6.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#AEB404");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.rango; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menurango = d3.select("#rango select")
+      .on("change", () => change(false));
+    menurango.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menurango.property("value", "10 a 20 años");
+    var change = function (isResize) {
+      var rango = menurango.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === rango }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-5");
       selection.datum(currentData).call(barChart, isResize);
     }
     window.onresize = function () {
