@@ -80,7 +80,14 @@
         <div class="dropdown" id="year-2"><label>Año: </label><select></select></div>
         <div id="chart-6" class="ui center aligned" style="min-height: 400px;"></div>
       </div>
+      <div class="paragrah">
+        <p>Al realizar la exploración en la siguiente visualización, se puede observar que en la mayoría de los departamentos el año en que se presentaron más abortos fue en 2014, en algunos casos se evidencia un pico bastante grande respecto a los demás años.</p>
+      </div>
     </div>
+  </div>
+  <div class="ui center aligned piled segment">
+    <div class="dropdown" id="department"><label>Año: </label><select></select></div>
+    <div id="chart-8" class="ui center aligned" style="min-height: 400px;"></div>
   </div>
   <br />
   <br />
@@ -215,6 +222,37 @@
         .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
         .sort(function (a, b) { return b.value - a.value; });
       var selection = d3.select("#chart-7");
+      selection.datum(currentData).call(barChart, isResize);
+    }
+    window.onresize = function () {
+      change(true);
+    }
+    change(false);
+  });
+  d3.csv("data_9.csv", function (d) {
+    d.amount = +d.amount;
+    return d;
+  }, function (error, data) {
+    if (error) throw error;
+    var barChart = chart("#AEB404");
+    var nestedData = d3.nest()
+      .key(function (d) { return d.college; }).sortKeys(d3.ascending)
+      .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+      .rollup(function (leaves) { return { "number": leaves.length, "total_amount": d3.sum(leaves, function (d) { return +d.amount; }) } })
+      .entries(data);
+    var menuYear = d3.select("#department select")
+      .on("change", () => change(false));
+    menuYear.selectAll("option")
+      .data(nestedData)
+      .enter().append("option")
+      .text(function (d) { return d.key; });
+    menuYear.property("value", "Amazonas");
+    var change = function (isResize) {
+      var college = menuYear.property("value");
+      var currentData = nestedData.find(function (d) { return d.key === college }).values
+        .map(function (d) { return { key: d.key, value: d.value.total_amount }; })
+        .sort(function (a, b) { return b.value - a.value; });
+      var selection = d3.select("#chart-8");
       selection.datum(currentData).call(barChart, isResize);
     }
     window.onresize = function () {
