@@ -106,6 +106,7 @@ En el año 2014 se presentó un pico elevado en la cantidad de abortos, la cifra
 En la mayoría de los departamentos el año en que se presentaron más abortos fue en 2014, en departamentos como Arauca se evidencia un pico bastante grande, triplicando la cantidad respecto de los demás años. 
 
 ## LINK CLASS WEBSITE 
+https://omarriaga.github.io/viz-aborto-colombia/src/index
 
 ## LINK PROJECT DEMO 
 
