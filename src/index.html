@@ -283,7 +283,7 @@
         console.log("height", height);
         var ratio = (width - 200) / (800 - 200);
         var clampedRatio = Math.max(0, Math.min(1, ratio));
-        var marginBottom = 80 + 48 * clampedRatio;
+        var marginBottom = 120 + 48 * clampedRatio;
         var marginLeft = 48 + 24 * clampedRatio;
         var margin = {
           top: 22,
@@ -342,7 +342,9 @@
           .attr("x", -5)
           .attr("dy", ".25em")
           .attr("transform", "rotate(-90)")
-          .style("text-anchor", "end");
+          .style("text-anchor", "end")
+          .style("font-size", ".7em");
+
         svg.select(".axis--y")
           .transition(t)
           .delay(duration)
