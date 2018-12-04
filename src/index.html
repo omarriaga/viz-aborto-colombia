@@ -81,7 +81,7 @@
         <div id="chart-6" class="ui center aligned" style="min-height: 400px;"></div>
       </div>
       <div class="paragrah">
-        <p>Al realizar la exploración en la siguiente visualización, se puede observar que en la mayoría de los departamentos el año en que se presentaron más abortos fue en 2014, en algunos casos se evidencia un pico bastante grande respecto a los demás años.</p>
+        <p style="font-size: 2.3em;">Al realizar la exploración en la siguiente visualización, se puede observar que en la mayoría de los departamentos el año en que se presentaron más abortos fue en 2014, en algunos casos se evidencia un pico bastante grande respecto a los demás años.</p>
       </div>
     </div>
   </div>
@@ -386,6 +386,7 @@
         "type": "fit",
         "resize": true
       },
+      'width': 80,
       'mark': 'bar',
       'encoding': {
         'column': {
@@ -420,6 +421,10 @@
       "mark": "bar",
       "width": 500,
       "height": 380,
+      "autosize": {
+        "type": "fit",
+        "resize": true
+      },
       "encoding": {
         "x": {
           // "timeUnit": "month",
@@ -450,8 +455,10 @@
       "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc6.json",
       "data": {"url": "data4.csv"},
       //"mark": "trail"
-      "width": 750,
-      "height": 750,
+      "autosize": {
+        "type": "fit",
+        "resize": true
+      },
       "layer": [
         {
           "encoding": {
