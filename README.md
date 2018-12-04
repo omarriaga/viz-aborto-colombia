@@ -1,91 +1,115 @@
-# [HTML5 Boilerplate](https://html5boilerplate.com/)
+# ABORTO EN COLOMBIA 
 
-[![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
-[![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
+## Cifras de aborto legal en Colombia (2009 - 2017) 
 
-HTML5 Boilerplate is a professional front-end template for building
-fast, robust, and adaptable web apps or sites.
+ 
 
-This project is the product of years of iterative development and
-community knowledge. It does not impose a specific development
-philosophy or framework, so you're free to architect your code in the
-way that you want.
+## OBJETIVO (PROBLEMATICA): 
 
-* Homepage: [https://html5boilerplate.com/](https://html5boilerplate.com/)
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Twitter: [@h5bp](https://twitter.com/h5bp)
+Visualizar los datos sobre el aborto legal en Colombia, exponiendo la problemática en el ámbito nacional. 
 
 
-## Quick start
+## ALTERNATIVAS: TAREAS A RESOLVER: 
 
-Choose one of the following options:
+De los 10.000 abortos legales realizados en Colombia hasta el año 2017, se pretende analizar cuál de los tres escenarios en los que es legal este procedimiento, es el más predominante, entre un rango especifico de edad. 
 
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
-3. Run `npm install html5-boilerplate` and pull in what you need from the resulting `node_modules/html5-boilerplate/dist`
+Analizar el tipo de diagnóstico que se han hecho sobre los abortos realizados en cada departamento del país. 
 
+## FRAMEWORK TAMARA 
 
-## Features
+## WHAT 
 
-* HTML5 ready. Use the new elements with confidence.
-* Designed with progressive enhancement in mind.
-* Includes:
-  * [`Normalize.css`](https://necolas.github.com/normalize.css/)
-    for CSS normalizations and common bug fixes
-  * [`jQuery`](https://jquery.com/) via CDN with [SRI Hash](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) and a local fallback
-  * A custom build of [`Modernizr`](https://modernizr.com/) for feature
-    detection
-  * [`Apache Server Configs`](https://github.com/h5bp/server-configs-apache)
-    that, among other, improve the web site's performance and security
-* Placeholder CSS Media Queries.
-* Useful CSS helper classes.
-* Default print styles, performance optimized.
-* An optimized version of the Google Universal Analytics snippet.
-* Protection against any stray `console` statements causing JavaScript
-  errors in older browsers.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+Dataset:  
+
+Tabla -> Cada ítem determina el tipo de aborto diagnosticado, por ciudad y año, y cada atributo, los datos registrados por paciente 
+
+Temporal -> El dataset con el que se cuenta, contiene la información relacionada con la cantidad de abortos anuales realizados de forma legal. 
 
 
-## Browser support
+Dataset de agregación: 
 
-* Chrome *(latest 2)*
-* Edge *(latest 2)*
-* Firefox *(latest 2)*
-* Internet Explorer 9+
-* Opera *(latest 2)*
-* Safari *(latest 2)*
-
-*This doesn't mean that HTML5 Boilerplate cannot be used in older browsers,
-just that we'll ensure compatibility with the ones mentioned above.*
-
-If you need legacy browser support you
-can use [HTML5 Boilerplate v4](https://github.com/h5bp/html5-boilerplate/tree/v4) (IE 6+, Firefox 3.6+, Safari 4+),
-or [HTML5 Boilerplate v5](https://github.com/h5bp/html5-boilerplate/tree/v5.0.0) (IE8+). They are no longer actively developed.
+Tabla -> cada ítem es una agregación por alguno de los campos descritos en el dataset original. 
 
 
-## Documentation
+Tipo de Datos: 
 
-Take a look at the [documentation table of contents](dist/doc/TOC.md).
-This documentation is bundled with the project which makes it 
-available for offline reading and provides a useful starting point for
-any documentation you want to write about your project.
+Categóricos -> Departamento, Municipio, Prestador, Diagnóstico, edad, año (2009 - 2017) 
 
+Cuantitativo-Secuencial -> Cantidad de abortos 
 
-## Contributing
+ 
+Disponibilidad de dataset: 
 
-Hundreds of developers have helped to make the HTML5 Boilerplate. Anyone is welcome to [contribute](.github/CONTRIBUTING.md),
-however, if you decide to get involved, please take a moment to review
-the [guidelines](.github/CONTRIBUTING.md):
+Dinámica -> El dataset permite recolectar datos de otros años y aumentar la cantidad de información para el respectivo análisis, enriqueciendo y modificando la visualización realizada. 
 
-* [Bug reports](.github/CONTRIBUTING.md#bugs)
-* [Feature requests](.github/CONTRIBUTING.md#features)
-* [Pull requests](.github/CONTRIBUTING.md#pull-requests)
+## WHY 
 
+- Tareas Principales  
+
+Resumir la distribución del número de abortos por rango de edades sobre el tiempo. [Summarize - Distribution] 
+
+Presentar la distribución a nivel departamental de la cantidad de abortos legales en Colombia [Present - Distribution] 
+
+- Tareas Secundarias  
+
+Explorar los principales motivos de aborto para cada uno de los años. [Explore - Features] 
+
+Agrupar la información a partir de las características que se seleccionen [Derive – Features] 
+
+Identificar la correlación que existe entre el aborto y el embarazo de mujeres en edades tempranas [Identify - Correlation] 
+
+Agrupar la información a partir de las características que se seleccionen [Derive – Features] 
+
+ 
+## HOW 
+
+- Tarea principal 1 
+
+Marcas: Líneas para codificar las edades y años de los abortos 
+
+Encode: Express - Separate 
+
+Canales: 
+
+El canal Tono de color para cada rango de edad 
+
+El canal Posición en escala común para la cantidad de abortos en el tiempo 
+
+Manipulación: Selección 
+
+ 
+- Tarea principal 2 
+
+Marcas: Línea para codificar la cantidad de abortos por departamento 
+
+Encode: Express - Order - Align 
+
+Canales: 
+
+El canal Tono de color para el departamento 
+
+El canal Posición en escala común para la cantidad de abortos por motivo 
+
+Manipulación: Selección 
+
+ 
+## INSIGHTS 
+
+El aborto espontáneo ha sido el diagnóstico más común en los centros de salud autorizados para realizar la interrupción del embarazo de forma legal. En cuanto a los abortos inducidos, se puede observar que la extracción menstrual ha sido el medio más utilizado para realizar la interrupción del embarazo. 
+
+En los abortos inducidos, la extracción menstrual ha sido el medio más utilizado para realizar la interrupción del embarazo. 
+
+Las mujeres que más han acudido a realizar un aborto de forma legal en los centros de salud están en el rango de edad de 21 a 30 años. 
+
+En el año 2014 se presentó un pico elevado en la cantidad de abortos, la cifra más preocupante se presentó en las mujeres de 21 a 30 años con un total de 9.537 abortos. 
+
+En la mayoría de los departamentos el año en que se presentaron más abortos fue en 2014, en departamentos como Arauca se evidencia un pico bastante grande, triplicando la cantidad respecto de los demás años. 
+
+## LINK CLASS WEBSITE 
+
+## LINK PROJECT DEMO 
+
+## LINK PAPER 
 
 ## License
 
