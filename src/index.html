@@ -377,7 +377,6 @@
   }
   const dataviz8 = d3.select("#chart-2");
   const width = dataviz8.node().getBoundingClientRect().width;
-  console.log('width', width);
   var vlSpec =
     {
       '$schema': 'https://vega.github.io/schema/vega-lite/v3.json',
@@ -449,12 +448,14 @@
     }
   // Embed the visualization in the container with id `vis`
   vegaEmbed("#chart-3", vlSpec3,{theme: 'light', actions:false});
-
+  const dataviz4 = d3.select("#chart-4");
+  const width4 = dataviz4.node().getBoundingClientRect().width;
   var vlSpec4 =
     {
       "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc6.json",
       "data": {"url": "data4.csv"},
       //"mark": "trail"
+      "width": width4,
       "height": 400,
       "autosize": {
         "type": "fit",
