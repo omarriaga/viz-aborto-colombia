@@ -112,6 +112,7 @@ https://omarriaga.github.io/viz-aborto-colombia/src/index
 https://www.youtube.com/watch?v=l5oSclrTsqA&feature=youtu.be
 
 ## LINK PAPER 
+El artículo se encuentra disponible en https://github.com/omarriaga/viz-aborto-colombia bajo el nombre de "Aborto Legal en Colombia - Articulo"
 
 ## License
 
